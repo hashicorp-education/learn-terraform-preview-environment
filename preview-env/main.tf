@@ -1,12 +1,12 @@
 provider "aws" {
-  region = var.region
+  region = "us-east-1"
 }
 
 data "terraform_remote_state" "shared" {
   backend = "remote"
 
   config = {
-    organization = "hashicorp-training"
+    organization = "Lab5_1"
     workspaces = {
       name = "hcup-be-shared"
     }

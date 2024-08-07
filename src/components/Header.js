@@ -15,7 +15,7 @@ export default function Header(props) {
   return (
     <>
       <Head>
-        <title>HashiCups - Demo App</title>
+        <title>HashiCups - Demo App3</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href={`/favicon-120.png`}
@@ -59,6 +59,7 @@ export default function Header(props) {
         <div className="absolute left-0 top-0">
           <Image src="/images/demo.svg" height={88} width={88} />
         </div>
+        <h1 class="font-bold py-4">HashiCups</h1>
       </header>
 
       <Account accountVisible={props.accountVisible} setAccountVisible={props.setAccountVisible} isAuthed={props.isAuthed} setIsAuthed={props.setIsAuthed} username={props.username} setUsername={props.setUsername} token={props.token} setToken={props.setToken} />
