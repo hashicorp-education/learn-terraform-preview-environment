@@ -32,3 +32,7 @@ output "lb_dns_name" {
 output "preview_url" {
   value = module.preview_env.preview_url
 }
+
+output "user_data" {
+  value = module.preview_env.user_data
+}
