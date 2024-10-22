@@ -9,3 +9,7 @@ output "public_ip" {
 output "preview_url" {
   value = vercel_deployment.frontend.url
 }
+
+output "user_data" {
+  value = data.template_file.user_data.rendered
+}
